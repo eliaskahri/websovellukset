@@ -1,1 +1,1 @@
-Tämä on websivuston kehittämisen repositorio. Tänne tulee jokainen opintojakson tehtävä.
+Tämä on websivuston kehittämisen repositorio. Tänne tulee jokainen opintojaksontehtävä.
