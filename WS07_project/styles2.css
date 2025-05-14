@@ -1,12 +1,7 @@
 body {
-  min-height: 100vh;
-  margin: 0;
-  display: grid;
-  grid-template-rows: 200px 400px 10px auto;
-  grid-template-columns: 1fr 25px 25px 25px 25px 25px 1fr;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background: #23272b;
+  
 }
 
 .item img {
@@ -16,39 +11,41 @@ body {
   margin-top: 15px;
 }
 
-input[type="radio"] {
-  display: flex;
-  margin-top: 250px;
-  margin-left: 0px;
+main, main.content {
+margin-top: 100px;
+}
+
+input[type="radio"]{
+  display: none;
 }
 .radio-dots {
-  grid-row: 1 / 2;
-  grid-column: 2 / 7;
   display: flex;
-  justify-content: flex-start;
-  margin-left: 30px;
-  align-items: center;
-  transform: translateX(-60px);
+  justify-content: center;
+  gap: 10px; 
+  margin-top: 20px; 
 }
-h2.text-center,
-.teams {
-  grid-row: 5 / 6;
-  grid-column: 1 / 8;
-  text-align: center;
+.radio-dots label {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
-nav.navbar {
-  grid-row: 1 / 2;
-  grid-column: 1 / 8;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
+
+
+h2.text-center
+{
+  top: 50%;
+ 
 }
+ 
+ 
+
 
 .name {
   margin-bottom: 2px;
-  color: #000000;
+  color: #aa1a1a;
 }
 
 .description {
@@ -193,19 +190,22 @@ input:nth-of-type(5):checked ~ main#carousel {
 }
 
 h2.text-center {
-  margin-top: -50px;
+  margin-top: 60px;
 }
 .teams {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: row;
   margin-top: 20px;
 }
 .teams .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 400px;
+  width: 100%;
   background: transparent;
   border-radius: 10px;
   padding: 16px;
@@ -217,4 +217,37 @@ h2.text-center {
   height: 80px;
   object-fit: contain;
   margin-bottom: 8px;
+}
+.footer {
+  width: 100%;
+ 
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+.teams img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+
+}
+
+.img-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;   
+  width: 30%;        
+  margin: 0 10px 20px 10px;
+  overflow: hidden;
+  border-radius: 8px; 
+}
+.img-wrapper img {
+  display: block;
+  width: 100%;
+  transition: filter 0.3s, transform 0.2s;
 }

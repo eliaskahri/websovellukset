@@ -40,3 +40,18 @@
   justify-items: center;
   align-items: center;
 }
+
+.container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.footer {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 222px;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
