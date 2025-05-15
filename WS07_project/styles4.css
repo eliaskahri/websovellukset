@@ -3,7 +3,7 @@
   padding: 0;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
+}
 .banner {
   width: 100%;
   height: 100vh;
@@ -27,11 +27,10 @@
 .content p {
   margin: 20px auto;
   font-weight: 100;
-
 }
 
-.maps{
-    width: 100%;
+.maps {
+  width: 100%;
   position: absolute;
   top: 80%;
   transform: translateY(-50%);
@@ -57,28 +56,25 @@
   justify-content: center;
   margin-top: -150px;
   flex-wrap: wrap;
- 
 }
 .container div {
   text-align: center;
   max-width: 600px;
-
 }
 
 .container img {
-   padding-top: 0px;
+  padding-top: 0px;
   width: 100%;
   max-width: 450px;
   height: auto;
   object-fit: cover;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 
- .container img:hover {
+.container img:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   transition: transform 0.2s, box-shadow 0.2s;
-
 }
 
 .img-wrapper {
@@ -86,11 +82,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 350px;   
-  width: 30%;        
+  max-width: 350px;
+  width: 30%;
   margin: 0 10px 20px 10px;
   overflow: hidden;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 .img-wrapper img {
   display: block;
@@ -100,7 +96,7 @@
 
 .img-text {
   position: absolute;
-top: 45%;
+  top: 45%;
   left: 0;
   width: 100%;
   color: #fff;
@@ -120,7 +116,7 @@ top: 45%;
   opacity: 1;
 }
 body {
-  background-color: rgba(10,14,32,255);
+  background-color: rgba(10, 14, 32, 255);
 }
 .footer {
   width: 100%;
@@ -138,7 +134,7 @@ body {
   background: #181b2a;
   padding: 32px 24px;
   border-radius: 12px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
   color: #fff;
   text-align: center;
 }

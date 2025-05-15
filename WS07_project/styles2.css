@@ -1,7 +1,7 @@
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color: rgba(60,39,5,255)
+  background-color: rgba(60, 39, 5, 255);
 }
 
 .item img {
@@ -11,18 +11,19 @@ body {
   margin-top: 15px;
 }
 
-main, main.content {
-margin-top: 100px;
+main,
+main.content {
+  margin-top: 100px;
 }
 
-input[type="radio"]{
+input[type="radio"] {
   display: none;
 }
 .radio-dots {
   display: flex;
   justify-content: center;
-  gap: 10px; 
-  margin-top: 20px; 
+  gap: 10px;
+  margin-top: 20px;
 }
 .radio-dots label {
   width: 12px;
@@ -33,15 +34,9 @@ input[type="radio"]{
   transition: background-color 0.3s;
 }
 
-
-h2.text-center
-{
+h2.text-center {
   top: 50%;
- 
 }
- 
- 
-
 
 .name {
   margin-bottom: 2px;
@@ -220,7 +215,7 @@ h2.text-center {
 }
 .footer {
   width: 100%;
- 
+
   color: #fff;
   text-align: center;
   padding: 20px 0;
@@ -230,9 +225,8 @@ h2.text-center {
 }
 .teams img:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   transition: transform 0.2s, box-shadow 0.2s;
-
 }
 
 .img-wrapper {
@@ -240,11 +234,11 @@ h2.text-center {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 350px;   
-  width: 30%;        
+  max-width: 350px;
+  width: 30%;
   margin: 0 10px 20px 10px;
   overflow: hidden;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 .img-wrapper img {
   display: block;
@@ -263,7 +257,7 @@ div.gallery {
 }
 .img-text {
   position: absolute;
-top: 45%;
+  top: 45%;
   left: 0;
   width: 100%;
   color: #fff;
