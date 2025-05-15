@@ -55,3 +55,8 @@
   font-size: 1.1rem;
   letter-spacing: 1px;
 }
+
+body {
+  background-color: rgba(10,14,32,255);
+}
+

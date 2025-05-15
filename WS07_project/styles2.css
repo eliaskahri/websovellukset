@@ -1,7 +1,7 @@
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  
+  background-color: rgba(60,39,5,255)
 }
 
 .item img {
@@ -250,4 +250,37 @@ h2.text-center {
   display: block;
   width: 100%;
   transition: filter 0.3s, transform 0.2s;
+}
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.img-wrapper:hover img {
+  filter: blur(2px);
+  transform: scale(1.05);
+}
+.img-text {
+  position: absolute;
+top: 45%;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  text-shadow: 0 2px 8px #000;
+}
+
+.img-wrapper:hover .img-text {
+  opacity: 1;
+}
+.img-wrapper:hover img {
+  filter: brightness(60%);
+  transform: scale(1.05);
+  filter: blur(2px);
+  transform: scale(1.05);
 }
